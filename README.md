@@ -1,4 +1,4 @@
-  ## 🐦 Tweet Sentiment Classifier 
+## 🐦 Tweet Sentiment Classifier 
 
 A custom-built Sentiment Analysis CLI tool in Python. 
 I built this project to understand the math and logic behind Machine Learning classification.
@@ -21,7 +21,7 @@ Here's what you can do with the classifier through its interactive menu:
 * **Real-time Prediction:** Type your own sentences in the terminal and the app applies the exact same preprocessing to your input before predicting its sentiment.
 * **Robust Evaluation:** Automatically splits data into Training and Testing sets (80/20 Split) to evaluate the model's accuracy on unseen data.
 
-### 👩🏽‍🍳 The Process
+# 👩🏽‍🍳 The Process
 
 I built this project iteratively, increasing the complexity to understand how data quality and mathematical formulas affect the model's performance:
 
@@ -30,14 +30,14 @@ I built this project iteratively, increasing the complexity to understand how da
 3. **Solution with Laplace Smoothing:** To fix the previous issue, I implemented Laplace Smoothing. This mathematically ensures no word has a zero probability, making the model robust enough to handle the entire 600k+ word vocabulary without overfitting.
 4. **Refactoring:** Finally, I refactored the entire code into an Object-Oriented structure, separated the training logic from the user interface (`main_def.py`), and added an interactive menu.
 
-### 📚 What I Learned
+# 📚 What I Learned
 
 * **🧠 ML Manual Computation:** I learned how Naïve Bayes actually calculates probabilities based on word frequencies.
 * **🔢 Log-Space Math:** I learned the importance of logarithms to turn probability multiplications into safe additions so that small decimals don't crash the process.
 * **🩹 Laplace Smoothing:** I learned how applying the smoothing can save the model from overfitting to noisy data.
 * **🧹 Data Preprocessing:** Implementing the `preprocess_text` pipeline taught me why stemming, removing stopwords, and balancing datasets are crucial steps.
 
-### ⚠️ Limitations & Edge Cases (The "Bag of Words" effect)
+# ⚠️ Limitations & Edge Cases (The "Bag of Words" effect)
 
 Because this model uses a basic *Bag of Words* approach, it evaluates words independently without understanding semantics, sarcasm, or context. 
 
